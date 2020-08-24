@@ -1,0 +1,30 @@
+{% load static %}
+<div id='map' style='width:400px; height: 400px;'>
+    <button class="btn btn-primary" id="lda_toggle" onclick='toggleLDA()'style="position: absolute;bottom: 20px;right: 20px;padding: 10px;z-index: 1001;">
+        Show doc2vec
+    </button>
+    <button id='capita_toggle' class='btn btn-primary' onclick='toggleCapita()'style="position: absolute;bottom: 80px;right: 20px;padding: 10px;z-index: 1001;">Show Per Capita</button>"
+</div>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<!-- LEAFLET -->
+<link href="{% static 'leaflet/leaflet.css'%}" rel="stylesheet" />
+<script src="{% static 'leaflet/leaflet.js' %}"></script>
+
+<!-- MAPBOX -->
+<script src="{% static 'mapbox/js/mapbox-gl.js' %}"></script>
+<link href="{% static 'mapbox/css/mapbox-gl.css' %}" rel='stylesheet' />
+
+<!-- CHARTJS -->
+<script src="{% static 'chartjs/Chart.js' %}"></script>
+
+<!-- DATA FOR THE MAP -->
+<script src="{% static 'interactive_map/map_data.js' %}"></script>
+<script src="{% static 'interactive_map/map_data_d2v.js' %}"></script>
+<script src="{% static 'boundaries/NUTS1.js' %}"></script>
+<script src="{% static 'boundaries/NUTS2.js' %}"></script>
+<script src="{% static 'boundaries/NUTS3.js' %}"></script>
+<script src="{% static 'interactive_map/variables.js' %}"></script>
+
+
+<script src="{% static 'interactive_map/init.js' %}"></script>
+
